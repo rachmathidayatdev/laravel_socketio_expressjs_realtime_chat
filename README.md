@@ -12,3 +12,7 @@
 10. run nodemon: nodemon socketio/index.js
 11. run php -S localhost:8000 -t ./public
 12. open in browser localhost:8000
+
+if error when run nodemon: 
+1. cd to your project
+2. run this command in terminal: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
